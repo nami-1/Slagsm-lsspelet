@@ -21,7 +21,7 @@ Console.WriteLine($"{player1} has done {herodamage} damage to {player2}");
 
 int villiandamage = generator.Next(20);
 heroHp -= villiandamage;
-heroHp = Math.Max(0, heroHp);
+heroHp = Math.Max(0, villianHp);
 Console.WriteLine($"{player2} has done {villiandamage} damage to {player1}");
 
 Console.WriteLine("PRESS ANY KEY TO CONTINUE TO THE GAME!");
@@ -45,22 +45,7 @@ else {
 
 Console.WriteLine("Press any key to end the game");
 Console.ReadKey();
+
+
 Console.ReadLine();
-
-
-
-
-
-//if (hitRoll > 95){
-  //  Console.WriteLine("Crit!");
-//}
-
-//else if (hitRoll > 40) {
-  //  Console.WriteLine("Hit");
-//}
-
-//else {
-  //  Console.WriteLine("Miss!");
-//}
-
 
